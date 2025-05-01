@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+.section {
+    padding: 40px 20px;
+}
+.mega-faction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.mega-card {
+    background: #222;
+    border-radius: 12px;
+    padding: 20px;
+    width: 180px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.mega-card:hover {
+    background: #333;
+}
+.sub-faction {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+.sub-card {
+    width: 180px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.sub-card img {
+    width: 100%;
+    height: 200px;
+}
+.sub-card h4 {
+    margin: 0;
+    padding: 10px;
+}
+.buttons {
+    margin: 10px 0;
+}
+.buttons a {
+    margin: 0 5px;
+    color: #0af;
+    text-decoration: none;
+}
+.buttons i{
+    margin:0 15px 0 15px ;
+}
+
