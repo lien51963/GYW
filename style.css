@@ -4,6 +4,14 @@ body {
     background: #111;
     color: #fff;
     text-align: center;
+    /* background-image: url(imageThem/Theme1.jpg); */
+    /* background-image: url(imageThem/Theme2.jpg); */
+    background-image: url(imageThem/Theme4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
 }
 .section {
     padding: 40px 20px;
@@ -57,4 +65,8 @@ body {
 .buttons i{
     margin:0 15px 0 15px ;
 }
-
+@media (max-width: 768px) {
+    body {
+      background-attachment: scroll; /* На мобилках фон будет скроллиться, чтобы избежать багов */
+    }
+  }
