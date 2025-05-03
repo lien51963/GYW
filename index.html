@@ -9,14 +9,83 @@
     <title>GENERIK YOUR WAY</title>
 </head>
 <body>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search..." />
+      </div>
+      
+
+    <div class="section">
+        <h1>CAMPAIGN DOCUMENTATION</h1>
+        <div class="mega-faction">
+            <div class="mega-card" onclick="showSubRules('story')">Campaign Story</div>
+            <div class="mega-card" onclick="showSubRules('rules')">Rules</div>
+            <div class="mega-card" onclick="showSubRules('planets')">Planets</div>
+            <div class="mega-card" onclick="showSubRules('terrain')">Terrain</div>
+            <div class="mega-card" onclick="showSubRules('card')">Player Card</div>
+        </div>
+    </div>
+
+    <div class="section sub-faction" id="story">   
+        <div class="sub-card">
+            <img src="image/story.jpg" alt="Campaign Story">
+            <h4>Campaign Story</h4>
+            <div class="buttons">
+                <a href="#"><i class="fa-regular fa-eye"></i></a>
+                <a href="#"><i class="fa-regular fa-file-pdf"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section sub-faction" id="rules">   
+            <div class="sub-card">
+                <img src="image/Story0.0.jpg" alt="Rules">
+                <h4>Campaign Rules</h4>
+                <div class="buttons">
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"><i class="fa-regular fa-file-pdf"></i></a>
+                </div>
+            </div>
+    </div>
+
+    <div class="section sub-faction" id="planets">   
+                <div class="sub-card">
+                    <img src="image/Planets.jpg" alt="Planets">
+                    <h4>Campaign Planets</h4>
+                    <div class="buttons">
+                        <a href="#"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#"><i class="fa-regular fa-file-pdf"></i></a>
+                    </div>
+                </div>
+    </div>
+                
+    <div class="section sub-faction" id="terrain">   
+                    <div class="sub-card">
+                        <img src="image/Terrain0.0.jpg" alt="Terrain">
+                        <h4>Campaign Terrain</h4>
+                        <div class="buttons">
+                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+                            <a href="#"><i class="fa-regular fa-file-pdf"></i></a>
+                        </div>
+                    </div> 
+    </div> 
+                    
+    <div class="section sub-faction" id="card">   
+                        <div class="sub-card">
+                            <img src="image/pCard.jpg" alt="Card">
+                            <h4>Campaign P-Card</h4>
+                            <div class="buttons">
+                                <a href="#"><i class="fa-regular fa-eye"></i></a>
+                                <a href="#"><i class="fa-regular fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+    </div>
+                
     <div class="section">
         <h1>CHOOSE YOUR SIDE</h1>
         <div class="mega-faction">
             <div class="mega-card" onclick="showSubFactions('imperium')">Imperium</div>
             <div class="mega-card" onclick="showSubFactions('chaos')">Chaos</div>
             <div class="mega-card" onclick="showSubFactions('xenos')">Xenos</div>
-
-            
         </div>
     </div>
 
@@ -137,8 +206,6 @@
                 <a href="#"><i class="fa-regular fa-file-pdf"></i></a>
                 </div>
             </div>
-
-          
     </div>
 
     <div class="section sub-faction" id="chaos">
@@ -162,8 +229,8 @@
 
         <div class="sub-card">
             <img src="image/EC0.0.webp" alt="Emperor Children">
-            <h4>Emperor's Children</h4
-                ><div class="buttons">
+            <h4>Emperor's Children</h4>
+                <div class="buttons">
                     <a href="#"><i class="fa-regular fa-eye"></i></a>
                 <a href="#"><i class="fa-regular fa-file-pdf"></i></a>
                 </div>
@@ -279,10 +346,9 @@
                 <a href="#"><i class="fa-regular fa-file-pdf"></i></a>
             </div>
         </div>
-
     </div>
 
    
-    <script src="script.js"></script>
+    <script src="script.js"></script>                                                                                       
 </body>
 </html>
