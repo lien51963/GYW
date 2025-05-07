@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Grenze+Gotisch:wght@100..900&display=swap');
 body {
     margin: 0;
-    font-family: sans-serif;
     background: #111;
     color: #fff;
     text-align: center;
-    /* background-image: url(imageThem/theme5.jpg); */
-    /* background-image: url(imageThem/theme7.jpg); */
     background-image: url(imageThem/theme9.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    font-family: "Germania One", system-ui;
+    font-family: "Germania One", system-ui;   
+}
+h1 {
+    color: white;
+    -webkit-text-stroke: 1px black;
 }
 .section {
     padding: 40px 20px;
@@ -72,20 +73,35 @@ body {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.5s ease-out;
   }
-  
+  @keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
   #search-bar {
     padding: 10px;
     width: 60%;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
-
-
+}
 #no-results-msg {
     text-align: center;
     padding: 20px;
     font-family: "Germania One", system-ui;
     text-shadow: 1px 1px 2px #000;
+    outline: none;
+    border-color: #0af;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
 }
