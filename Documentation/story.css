@@ -32,6 +32,13 @@ body{
     -webkit-text-stroke: 1px black;
     font-size: 30px;
 }
+.back-icon {
+    margin: 10px;
+    padding: 20px 20px;
+    width: 100px;
+    height: 100px;
+}
+
 @media screen and (max-width: 768px) {
     .container{
         padding: 45px 20px;
