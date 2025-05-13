@@ -93,3 +93,37 @@ function createNoResultsMsg() {
     document.body.appendChild(msg);
     return msg;
 }
+
+//Pdf download
+document.addEventListener('DOMContentLoaded', function () {
+    const pdfButton = document.querySelector('.pdf-btn[data-pdf="story"]');
+    if (pdfButton) {
+      pdfButton.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        fetch('Documentation/story.html')
+          .then(response => response.text())
+          .then(html => {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
+            document.body.appendChild(tempDiv); // вставляем временно для обработки стилей
+
+            // Селектор контейнера, который нужно конвертировать
+            const element = tempDiv.querySelector('.container') || tempDiv;
+
+            // Настройки PDF
+            const opt = {
+              margin: 0.5,
+              filename: 'story.pdf',
+              image: { type: 'jpeg', quality: 0.98 },
+              html2canvas: { scale: 2 },
+              jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save().then(() => {
+              document.body.removeChild(tempDiv);
+            });
+          });
+      });
+    }
+  });
