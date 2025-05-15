@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Grenze+Gotisch:wght@100..900&display=swap');
 body{
     margin: 0;
+    padding: 40px 20px; 
     font-family: "Germania One", system-ui;
     background-image: url(../imageThem/Theme1.jpg);
     background-repeat: no-repeat;
@@ -10,9 +11,59 @@ body{
     background-attachment: fixed;
     height: 100vh;
 }
-.container{
-    padding: 40px 20px; 
-}
+
+ .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            color: white;
+             -webkit-text-stroke: 1px black;
+ }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container p{
+            font-size: 25px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .terrain {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .terrain.reverse {
+            direction: rtl;
+        }
+
+        .terrain.reverse .terrain-text {
+            direction: ltr;
+        }
+
+        .terrain-img img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .terrain-text h2 {
+            margin-top: 0;
+            font-size: 30px;
+        }
+
+        .terrain-text p {
+            margin: 10px 0 0;
+            font-size: 20px;
+        }
 
 .back-icon {
     margin: 10px;
@@ -20,3 +71,31 @@ body{
     width: 100px;
     height: 100px;
 }
+
+ @media (max-width: 768px) {
+            .terrain {
+                grid-template-columns: 1fr;
+                direction: ltr !important;
+            }
+
+            .terrain.reverse .terrain-text {
+                direction: ltr;
+            }
+
+            .terrain-img,
+            .terrain-text {
+                text-align: center;
+            }
+
+            .terrain-text h2 {
+                font-size: 30px;
+            }
+
+            .terrain-text p {
+                font-size: 22px;
+                text-align:left ;
+            }
+            .container p{
+            text-align:left ;
+        }
+        }
