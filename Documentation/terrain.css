@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Grenze+Gotisch:wght@100..900&display=swap');
+body{
+    margin: 0;
+    font-family: "Germania One", system-ui;
+    background-image: url(../imageThem/Theme1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-align: center;;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.container{
+    padding: 40px 20px; 
+}
+
+.back-icon {
+    margin: 10px;
+    padding: 20px 20px;
+    width: 100px;
+    height: 100px;
+}
