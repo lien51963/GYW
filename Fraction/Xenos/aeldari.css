@@ -21,9 +21,6 @@ flex-direction: column;
  }
 
 .header{
-/* background-color: rgba(209, 24, 24, 0.4); 
-border: 2px solid rgba(255, 255, 255, 0.3); 
-border-radius: 10px; */
 width: 100%;
 height: 100px;
 margin:  0;
@@ -98,9 +95,6 @@ padding: 10px;
 }
 
 .rewards-title{
-/* background-color: rgba(6, 40, 236, 0.4); 
-border: 2px solid rgba(255, 255, 255, 0.3); 
-border-radius: 10px; */
 font-size: 20px;
 
 }
@@ -122,9 +116,6 @@ padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
-    /* align-items: flex-start; */
-    /* gap: 20px; */
 }
 .rewards {
   flex: 2;
@@ -141,20 +132,6 @@ padding: 10px;
     flex: 1 1 40%;
 }
 
-/*.reward-and-image .image {
-    flex: 1 1 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.reward-and-image .image img {
-    max-width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: contain;
-} */
-
 .back-icon {
     margin: 10px;
     padding: 20px 20px;
@@ -166,6 +143,7 @@ padding: 10px;
     .container {
         padding: 0;
         max-width: 100%;
+        /* margin: 7px; */
     }
     .mission{
     width: 100%;
@@ -196,7 +174,7 @@ padding: 10px;
 }
 
   .mission-inform p {
-    font-size: 16px;
+    font-size: 15px;
     margin: 0;
   }
 
