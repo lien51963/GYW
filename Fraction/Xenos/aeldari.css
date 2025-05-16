@@ -151,6 +151,9 @@ padding: 10px;
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
   .mission-grid {
     flex-wrap: nowrap;
     overflow-x: auto;
