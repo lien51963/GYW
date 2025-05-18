@@ -2,7 +2,7 @@
 body{
     margin: 0;
     font-family: "Germania One", system-ui;
-    background-image: url(../imageThem/Theme1.jpg);
+    background-image: url(../imageThem/Theme2.jpg);
       background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -25,6 +25,15 @@ body{
     justify-content: center;
     margin: 10px
 }
+
+.planets{
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 10px;
+    background-color: rgba(37, 38, 43, 0.4);
+    padding: 5px;
+    margin: 5px;
+}
+
 .planets h2{
     font-size: 30px;
 }

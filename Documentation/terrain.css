@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 40px 20px; 
     font-family: "Germania One", system-ui;
-    background-image: url(../imageThem/Theme1.jpg);
+    background-image: url(../imageThem/Theme2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -38,10 +38,15 @@ body{
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             align-items: center;
+            border: 2px solid rgba(255, 255, 255, 0.3); 
+            border-radius: 10px;
+            background-color: rgba(37, 38, 43, 0.4);
+            padding: 5px;
         }
 
         .terrain.reverse {
             direction: rtl;
+            
         }
 
         .terrain.reverse .terrain-text {
@@ -49,8 +54,8 @@ body{
         }
 
         .terrain-img img {
-            width: 50%;
-            height: auto;
+            width: 100%;
+            height: 50%;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         }
