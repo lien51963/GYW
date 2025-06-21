@@ -20,13 +20,22 @@ body{
     margin: 20px;
     flex-wrap: wrap;
 }
-.section{
+/* .section{
     align-items: center;
     justify-content: center;
     margin: 10px
-}
+} */
+ .section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
 
 .planets{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
     border: 2px solid rgba(255, 255, 255, 0.3); 
     border-radius: 10px;
     background-color: rgba(37, 38, 43, 0.4);
@@ -46,6 +55,19 @@ body{
     width: 100px;
     height: 100px;
 }
+.planets.reverse {
+    direction: rtl;
+}
+.planets.reverse .planets-text {
+    direction: ltr;
+}
+.planet-img img{
+     width: 100%;
+     height: 50%;
+}
+.class p{
+    text-align: center;
+}
 @media screen and (max-width: 768px){
     .container p{
         text-align:left ;
@@ -53,4 +75,12 @@ body{
     .section p {
         text-align:left ;
     }
+    .planets {
+        grid-template-columns: 1fr;
+        direction: ltr !important;
+    }
+    .planets.reverse .planets-text {
+        direction: ltr;
+    }
+    
 }
